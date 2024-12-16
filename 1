@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANMMNA AI Service</title>
+    <style>
+         body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Apple's system font */
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7; /* Light grey background */
+            color: #333; /* Dark grey text */
+            line-height: 1.6;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+        
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        nav {
+            background-color: #fff; /* White navbar */
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         nav .logo{
+          font-weight: 600;
+           font-size: 1.2em;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            
+        }
+        
+        nav ul li{
+          margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #007aff; /* Apple's blue */
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0;
+        }
+        
+        header h1{
+           font-size: 3em;
+           font-weight: 600;
+           margin-bottom: 20px;
+        }
+        
+        header p{
+          font-size: 1.2em;
+          color: #666;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+
+
+        section {
+            padding: 40px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .service-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .service-item h3{
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+         .service-item p{
+            color: #666;
+        }
+
+         .service-item img{
+           max-width: 100%;
+           height: auto;
+           margin-bottom: 15px;
+           border-radius: 8px;
+           box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+         }
+
+        footer {
+          background-color: #f7f7f7;
+          text-align: center;
+          padding: 20px 0;
+          margin-top: 50px;
+          border-top: 1px solid #eee;
+          color: #999;
+
+        }
+       
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            nav ul{
+               flex-direction: column;
+               align-items: flex-start;
+            }
+            nav ul li{
+              margin: 10px 0;
+            }
+            
+           .service-list{
+             flex-direction: column;
+             align-items: center;
+           }
+           .service-item{
+             width: 80%;
+           }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+      <div class="container">
+          <div class="logo">ANMMNA AI</div>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <header>
+        <div class="container">
+          <h1>Revolutionize Your Manufacturing with AI</h1>
+          <p>Optimize your production line, predict maintenance needs, and ensure peak efficiency with our AI-powered solutions.</p>
+        </div>
+    </header>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our AI Optimization Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                   <img src="https://placehold.co/600x400/EEE/31343C" alt="AI Monitoring"/>
+                    <h3>AI Equipment Monitoring</h3>
+                    <p>Real-time monitoring of machinery performance to detect anomalies and predict potential failures, reducing downtime.</p>
+                </div>
+                <div class="service-item">
+                  <img src="https://placehold.co/600x400/CCC/31343C" alt="Preventative Maintenance"/>
+                    <h3>Preventative Maintenance Management</h3>
+                    <p>AI-driven planning of preventative maintenance to maximize equipment lifespan and minimize unexpected breakdowns.</p>
+                </div>
+                <div class="service-item">
+                   <img src="https://placehold.co/600x400/AAA/31343C" alt="Line Balancing"/>
+                    <h3>Line Balancing & Optimization</h3>
+                    <p>Analyze tact times at each station to suggest optimal step distribution, maximizing line speed and resource utilization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+       <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you are interested in our services, contact us today.</p>
+          <form>
+                <!-- Add form elements here if you want -->
+                <button>Contact Us</button>
+            </form>
+      </div>
+    </section>
+
+
+    <footer>
+      <p>© 2023 ANMMNA AI Service. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
